@@ -11,8 +11,8 @@ conn = pyodbc.connect(
 cursor = conn.cursor()
 
 # SQL commands
-cursor.execute("CREATE DATABASE MyDatabase")
-cursor.execute("USE MyDatabase")
+cursor.execute("CREATE DATABASE MyDatabase1")
+cursor.execute("USE MyDatabase1")
 cursor.execute("""
     CREATE TABLE Users (
         id INT PRIMARY KEY,
