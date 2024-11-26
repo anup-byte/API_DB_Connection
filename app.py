@@ -1,4 +1,3 @@
-# Main Application file
 from flask import Flask, jsonify
 from db import get_db_connection
 
@@ -32,4 +31,3 @@ def get_users():
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
-
