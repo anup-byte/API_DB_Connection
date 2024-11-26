@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_db_connection():
+    """
+    Establish a connection to the SQL Server database using credentials from .env.
+    """
     try:
         connection = pyodbc.connect(
             f'DRIVER={{ODBC Driver 17 for SQL Server}};'
